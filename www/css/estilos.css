@@ -1,0 +1,56 @@
+html,body
+{
+	height: 100%;
+}
+
+body
+{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(73,121,139,1) 43%, rgba(0,212,255,1) 100%);
+}
+
+.contenido{
+	margin: 0 auto;
+	width: 80%;
+}
+nav{
+	background:rgba(255,255,255,0.5);
+	padding: 2em;
+}
+
+.foto{
+	margin:0 auto;
+	width: 40%
+}
+
+.imagen{
+	height: auto;
+	max-width: 80%
+}
+
+.menu{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu li a{
+	color:black;
+	font-family: verdana;
+	font-size: 200%;
+	text-decoration:none;
+}
+
+.menu li a:hover{
+	text-decoration:overline;
+}
+
+@media screen and (max-width:700px){
+	.menu{
+		flex-direction: column;
+	}
+
+	.menu li{
+		text-align: center;
+	}
+}
